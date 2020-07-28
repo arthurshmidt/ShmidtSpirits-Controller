@@ -31,8 +31,8 @@ valve_outputs = Mod4AO()                    # AO Board designation
 supply_temp_st = 90
 
 # PID value setting for tunning control
-sup_kvalue_proportional = -1
-sup_kvalue_integral = -0.01
+sup_kvalue_proportional = -10
+sup_kvalue_integral = -0.1
 sup_kvalue_derivative = 0.0
 
 # ************************************************************************* #
@@ -60,12 +60,13 @@ def test_valve():
 #                                                                           #
 # ************************************************************************* #
 
-# Define PID objects
-# PID for supply
-supply_pid = PID(sup_kvalue_proportional,sup_kvalue_integral,sup_kvalue_derivative,supply_temp_st)
-supply_pid.sample_time = 1
-supply_pid.output_limits = (40, 100)
+if __name__ == "__main__":
+    # Define PID objects
+    # PID for supply
+    supply_pid = PID(sup_kvalue_proportional,sup_kvalue_integral,sup_kvalue_derivative,supply_temp_st)
+    supply_pid.sample_time = 1
+    supply_pid.output_limits = (0, 100)
 
-while True:
-    # Test Valve
-    test_valve()
+    while True:
+        # Test Valve
+        test_valve()
