@@ -42,8 +42,8 @@ condensor_therm_return_input = 1
 condensor_therm_supply_input = 3
 
 # PID value setting for tunning control
-sup_kvalue_proportional = -10
-sup_kvalue_integral = -0.1
+sup_kvalue_proportional = -1
+sup_kvalue_integral = -0.01
 sup_kvalue_derivative = 0.0
 
 # ************************************************************************* #
@@ -120,7 +120,7 @@ def command_valves(supply_vlv_percent_cmd):
 # PID for supply
 supply_pid = PID(sup_kvalue_proportional,sup_kvalue_integral,sup_kvalue_derivative,supply_temp_st)
 supply_pid.sample_time = 1
-supply_pid.output_limits = (0, 100)
+supply_pid.output_limits = (0, 60)
 
 # Command System to inital positions
 valve_outputs.write_single(supply_vlv_output,4000)
