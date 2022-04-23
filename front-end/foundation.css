@@ -1,0 +1,37 @@
+
+
+.f-wrapper-height {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.f-l-sidebar {
+  width: 250px;
+}
+
+.f-r-sidebar {
+  width: 250px;
+}
+
+.f-r-card {
+  background-color: whitesmoke;
+}
+
+.f-center {
+  border-left: solid;
+  border-right: solid;
+  border-color: lightgrey;
+  border-width: 0px 1px;
+}
+
+.f-nav-link {
+  border-radius: 30px;
+  border-width: 1px;
+  color: inherit;
+
+}
+
+.f-nav-link:hover {
+  background-color: lightgrey;
+  color: white;
+}
