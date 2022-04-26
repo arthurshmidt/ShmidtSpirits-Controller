@@ -42,25 +42,26 @@
 
           <li class="nav-item">
             <h5>
-              <div class="input-group">
-                <div class="input-group-text">System:</div>
-                <button type="button" class="btn btn-outline-success justify-content-end">ON</button>
+              <div class="btn-group">
+                <a class="btn btn-outline-dark">System:</a>
+                <a class="btn btn-outline-success justify-content-end">ON</a>
+              </div>
             </h5>
           </li>
 
           <li class="nav-item">
             <h5>
-              <a href="#" class="btn btn-outline-danger">Boiler</a>
+              <a href="#" class="btn btn-outline-danger d-grid">Boiler</a>
             </h5>
           </li>
           <li class="nav-item">
             <h5>
-              <button type="button" class="btn btn-outline-danger">Supply</button>
+              <a href="#" class="btn btn-outline-danger d-grid">Supply</a>
             </h5>
           </li>
           <li class="nav-item">
             <h5>
-              <button type="button" class="btn btn-outline-danger">Dephlagmater</button>
+              <a href="#" class="btn btn-outline-danger d-grid">Dephlagmater</a>
             </h5>
           </li>
 
@@ -72,26 +73,15 @@
 
       <div class="flex-fill bg-light f-center">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled">Disabled</a>
-              </div>
-            </div>
+            <a class="navbar-brand" href="#">Dashboard</a>
           </div>
         </nav>
 
         <div class="card m-3">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">System Graph</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="card-link">Card link</a>
@@ -102,21 +92,33 @@
         <div class="d-flex">
           <div class="card m-3">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Dephlagmater Values</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>
             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Set Point:</li>
+              <li class="list-group-item">P-Value:</li>
+              <li class="list-group-item">I-Value:</li>
+              <li class="list-group-item">D-Value:</li>
+            </ul>
           </div>
           <div class="card m-3">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Supply Values</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>
             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Set Point:</li>
+              <li class="list-group-item">P-Value:</li>
+              <li class="list-group-item">I-Value:</li>
+              <li class="list-group-item">D-Value:</li>
+            </ul>
           </div>
         </div>
 
@@ -137,7 +139,7 @@
 
         <div class="card m-3">
           <div class="card-body f-r-card">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Dephlagmater Stpt</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="card-link">Card link</a>
@@ -147,7 +149,7 @@
 
         <div class="card m-3">
           <div class="card-body f-r-card">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Supply Stpt</h5>
             <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="card-link">Card link</a>
