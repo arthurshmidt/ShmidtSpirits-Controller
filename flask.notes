@@ -1,0 +1,6 @@
+export FLASK_APP="name of app"
+export FLASK_ENV=development
+
+/* not sure how to undo devleopment mode. */
+
+$ flask run  // runs flask application default port 5000
