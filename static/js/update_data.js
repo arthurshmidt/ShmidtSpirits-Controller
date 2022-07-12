@@ -1,9 +1,21 @@
 // dephl_stpt = id
 
-setInterval(update_values, 1000);
+// Constants
+const DATA_FILE = "/static/js/test.json";
+
+setInterval(update_values, 2000);
 var c = 0;
 var temp;
+var data_json;
 
+// Read in data & Convert to JSON
+console.log("Reading JSON file");
+$.getJSON(DATA_FILE, (data) => {
+    console.log(data);
+});
+//var fr = new FileReader();
+// var data_string = fr.readAsText(DATA_FILE);
+// var data_json = JSON.parse(data_string);
 console.log("Entered update_values javascript");
 // document.getElementById("dephl_stpt").innerHTML = "XX";
 
