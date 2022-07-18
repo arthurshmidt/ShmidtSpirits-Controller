@@ -2,7 +2,7 @@ import random
 import time
 import json
 
-FILENAME = "data/test.json"
+FILENAME = "static/data/test.json"
 
 data = {
         "value": 0
